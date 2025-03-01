@@ -31,7 +31,7 @@
             <div class="flex items-center ">
                 <div class="flex bg-[#F4F7FF] w-28 justify-center items-center p-3 rounded-3xl	">
                     <img class="mr-2" src="assets/checkbox.png" alt="">
-                    <p class="text-3xl font-bold">23</p>
+                    <p id="task-total-numbs" class="text-3xl font-bold">24</p>
                 </div>
 
                 <button class="bg-[#F4F7FF] rounded-full ml-9 mr-6 hover:bg-gray-200">
@@ -60,8 +60,8 @@
                         </div>
 
                         <div>
-                            <h4 class="text-base font-medium">Task Assigned </h4>
-                            <h2 class="text-3xl	font-bold">05</h2>
+                            <h4 class="text-base font-medium">Task Assigned</h4>
+                            <h2 id="task-numbs" class="text-3xl	font-bold">06</h2>
                         </div>
                     </div>
 
@@ -112,7 +112,8 @@
                                 <h4 class="font-medium text-base">21 March 2025</h4>
                             </div>
                             <button id="Complete-btn-1"
-                                class="text-base text-[#FFFFFF] font-medium bg-[#3752FD] px-5 py-3 mt-4 rounded-lg mr-4 hover:bg-[#3752FD]/80">Completed</button>
+                                class="text-base text-[#FFFFFF] font-medium bg-[#3752FD] px-5 py-3 mt-4 rounded-lg mr-4 hover:bg-[#3752FD]/80" >Completed</button>
+
                         </div>
                     </section>
 
@@ -131,7 +132,7 @@
                                 <p class="font-normal text-gray-400">Deadline</p>
                                 <h4 class="font-medium text-base">21 March 2025</h4>
                             </div>
-                            <button
+                            <button id="Complete-btn-2"
                                 class="text-base text-[#FFFFFF] font-medium bg-[#3752FD] px-5 py-3 mt-4 rounded-lg mr-4">Completed</button>
                         </div>
                     </section>
@@ -151,7 +152,7 @@
                                 <p class="font-normal text-gray-400">Deadline</p>
                                 <h4 class="font-medium text-base">21 March 2025</h4>
                             </div>
-                            <button
+                            <button id="Complete-btn-3"
                                 class="text-base text-[#FFFFFF] font-medium bg-[#3752FD] px-5 py-3 mt-4 rounded-lg mr-4">Completed</button>
                         </div>
                     </section>
@@ -170,7 +171,7 @@
                                 <p class="font-normal text-gray-400">Deadline</p>
                                 <h4 class="font-medium text-base">21 March 2025</h4>
                             </div>
-                            <button
+                            <button id="Complete-btn-4"
                                 class="text-base text-[#FFFFFF] font-medium bg-[#3752FD] px-5 py-3 mt-4 rounded-lg mr-4">Completed</button>
                         </div>
                     </section>
@@ -190,7 +191,7 @@
                                 <p class="font-normal text-gray-400">Deadline</p>
                                 <h4 class="font-medium text-base">21 March 2025</h4>
                             </div>
-                            <button
+                            <button id="Complete-btn-5"
                                 class="text-base text-[#FFFFFF] font-medium bg-[#3752FD] px-5 py-3 mt-4 rounded-lg mr-4">Completed</button>
                         </div>
                     </section>
@@ -210,7 +211,7 @@
                                 <p class="font-normal text-gray-400">Deadline</p>
                                 <h4 class="font-medium text-base">21 March 2025</h4>
                             </div>
-                            <button
+                            <button id="Complete-btn-6"
                                 class="text-base text-[#FFFFFF] font-medium bg-[#3752FD] px-5 py-3 mt-4 rounded-lg mr-4">Completed</button>
                         </div>
                     </section>
@@ -228,49 +229,57 @@
                         <img class="w-6 h-6" src="assets/activity.png" alt="">
                         <h2 class="text-xl	font-medium">Activity Log</h2>
                     </div>
-                    <button class="text-base text-[#FFFFFF] font-medium bg-[#3752FD] px-5 py-3 mt-4 rounded-lg ">Clear
+                    <button id="Clear-History-btn" class="text-base text-[#FFFFFF] font-medium bg-[#3752FD] px-5 py-3 mt-4 rounded-lg ">Clear
                         History</button>
                     <p class="font-medium mt-3 text-[#3752FD]/10">- - - - - - - - - - - - - - - - - - - - - - - - - - -
                         -
                     </p>
                 </section>
 
-                <section class="mt-5">
 
-                    <div class="bg-[#F4F7FF] max-w-80 mx-auto pt-4 pl-4 pb-4 pr-4 rounded-lg mb-7">
+                <!-- History Massage Section -->
+                <section id="History-Massages" class="mt-5">
+
+                    <!-- Massage-1 -->
+                    <div id="Massage-1" class="bg-[#F4F7FF] max-w-80 mx-auto pt-4 pl-4 pb-4 pr-4 rounded-lg mb-7">
                         <p class="text-base font-normal text-gray-600 text-left">You have Complete The Task Fix Mobile
                             Button Issue
-                            at 12:48:15 PM</p>
+                            at <span id="msg-1-time"></span></p>
                     </div>
 
-                    <div class="bg-[#F4F7FF] max-w-80 mx-auto pt-4 pl-4 pb-4 pr-4 rounded-lg mb-7">
+                    <!-- Massage-2 -->
+                    <div id="Massage-2" class="bg-[#F4F7FF] max-w-80 mx-auto pt-4 pl-4 pb-4 pr-4 rounded-lg mb-7">
                         <p class="text-base font-normal text-gray-600 text-left">You have Complete The Task Add Dark
                             Mode
-                            at 12:48:15 PM</p>
+                            at <span id="msg-2-time"></span></p>
                     </div>
 
-                    <div class="bg-[#F4F7FF] max-w-80 mx-auto pt-4 pl-4 pb-4 pr-4 rounded-lg mb-7">
+                    <!-- Massage-3 -->
+                    <div id="Massage-3" class="bg-[#F4F7FF] max-w-80 mx-auto pt-4 pl-4 pb-4 pr-4 rounded-lg mb-7">
                         <p class="text-base font-normal text-gray-600 text-left">You have Complete The Task Optimize
                             Home Page
-                            at 12:48:15 PM</p>
+                            at <span id="msg-3-time"></span></p>
                     </div>
 
-                    <div class="bg-[#F4F7FF] max-w-80 mx-auto pt-4 pl-4 pb-4 pr-4 rounded-lg mb-7">
+                    <!-- Massage-4 -->
+                    <div id="Massage-4" class="bg-[#F4F7FF] max-w-80 mx-auto pt-4 pl-4 pb-4 pr-4 rounded-lg mb-7">
                         <p class="text-base font-normal text-gray-600 text-left">You have Complete The Task Add new
                             emoji
-                            at 12:48:15 PM</p>
+                            at <span id="msg-4-time"></span></p>
                     </div>
 
-                    <div class="bg-[#F4F7FF] max-w-80 mx-auto pt-4 pl-4 pb-4 pr-4 rounded-lg mb-7">
+                    <!-- Massage-5 -->
+                    <div id="Massage-5" class="bg-[#F4F7FF] max-w-80 mx-auto pt-4 pl-4 pb-4 pr-4 rounded-lg mb-7">
                         <p class="text-base font-normal text-gray-600 text-left">You have Complete The Task Fix Video
                             Loading Issue
-                            at 12:48:15 PM</p>
+                            at <span id="msg-5-time"></span></p>
                     </div>
 
-                    <div class="bg-[#F4F7FF] max-w-80 mx-auto pt-4 pl-4 pb-4 pr-4 rounded-lg mb-7">
+                    <!-- Massage-6 -->
+                    <div id="Massage-6" class="bg-[#F4F7FF] max-w-80 mx-auto pt-4 pl-4 pb-4 pr-4 rounded-lg mb-7">
                         <p class="text-base font-normal text-gray-600 text-left">You have Complete The Task Integrate AI
                             Search
-                            at 12:48:15 PM</p>
+                            at <span id="msg-6-time"></span></p>
                     </div>
                 </section>
 
@@ -279,8 +288,8 @@
         </section>
     </main>
 
-    <script src="script/scrip.js"></script>
-
+    <script src="script/complete.js"></script>
+    <script src="script/toggle.js"></script>
 </body>
 
 </html>
