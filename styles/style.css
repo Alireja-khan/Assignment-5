@@ -2,3 +2,10 @@
     font-family: "Poppins", sans-serif;
     font-weight: 100;
   }
+
+  .custom-hr {
+    border: none;
+    border-top: 3px dashed gray;
+    width: 100%;
+    border-image: repeating-linear-gradient(90deg, gray 0, gray 10px, transparent 10px, transparent 30px) 1;
+  }
