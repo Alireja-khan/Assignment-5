@@ -17,3 +17,4 @@ document.getElementById("Clear-History-btn").addEventListener("click", function(
     document.getElementById("History-Massages").style.display = "none";
 
 })
+

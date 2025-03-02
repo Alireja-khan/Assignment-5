@@ -118,4 +118,5 @@ document.getElementById("Complete-btn-6").addEventListener("click", function () 
     document.getElementById("task-total-numbs").innerText = updateTaskTotalNumbs;
     document.getElementById("Massage-6").style.display = "block";
     document.getElementById("msg-6-time").innerText = currentTime;
+    alert();
 }) 
