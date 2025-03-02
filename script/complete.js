@@ -8,7 +8,7 @@ document.getElementById("Discover").addEventListener("click", function () {
 
 document.getElementById("Complete-btn-1").addEventListener("click", function () {
     alert("Board Updated Successfully  !");
-    document.getElementById("Complete-btn-1").style.backgroundColor = "rgba(55, 82, 253, 0.4)";
+    document.getElementById("Complete-btn-1").style.backgroundColor = "rgba(55, 82, 253, 0.2)";
     this.disabled = true;
     let currentTime = new Date().toLocaleTimeString();
     const taskNumbs = document.getElementById("task-numbs").innerText;
@@ -28,7 +28,7 @@ document.getElementById("Complete-btn-1").addEventListener("click", function () 
 
 document.getElementById("Complete-btn-2").addEventListener("click", function () {
     alert("Board Updated Successfully  !");
-    document.getElementById("Complete-btn-2").style.backgroundColor = "rgba(55, 82, 253, 0.4)";
+    document.getElementById("Complete-btn-2").style.backgroundColor = "rgba(55, 82, 253, 0.2)";
     this.disabled = true;
     let currentTime = new Date().toLocaleTimeString();
     const taskNumbs = document.getElementById("task-numbs").innerText;
@@ -47,7 +47,7 @@ document.getElementById("Complete-btn-2").addEventListener("click", function () 
 
 document.getElementById("Complete-btn-3").addEventListener("click", function () {
     alert("Board Updated Successfully  !");
-    document.getElementById("Complete-btn-3").style.backgroundColor = "rgba(55, 82, 253, 0.4)";
+    document.getElementById("Complete-btn-3").style.backgroundColor = "rgba(55, 82, 253, 0.2)";
     this.disabled = true;
     let currentTime = new Date().toLocaleTimeString();
     const taskNumbs = document.getElementById("task-numbs").innerText;
@@ -66,7 +66,7 @@ document.getElementById("Complete-btn-3").addEventListener("click", function () 
 
 document.getElementById("Complete-btn-4").addEventListener("click", function () {
     alert("Board Updated Successfully  !");
-    document.getElementById("Complete-btn-4").style.backgroundColor = "rgba(55, 82, 253, 0.4)";
+    document.getElementById("Complete-btn-4").style.backgroundColor = "rgba(55, 82, 253, 0.2)";
     this.disabled = true;
     let currentTime = new Date().toLocaleTimeString();
     const taskNumbs = document.getElementById("task-numbs").innerText;
@@ -85,7 +85,7 @@ document.getElementById("Complete-btn-4").addEventListener("click", function () 
 
 document.getElementById("Complete-btn-5").addEventListener("click", function () {
     alert("Board Updated Successfully  !");
-    document.getElementById("Complete-btn-5").style.backgroundColor = "rgba(55, 82, 253, 0.4)";
+    document.getElementById("Complete-btn-5").style.backgroundColor = "rgba(55, 82, 253, 0.2)";
     this.disabled = true;
     let currentTime = new Date().toLocaleTimeString();
     const taskNumbs = document.getElementById("task-numbs").innerText;
@@ -104,7 +104,7 @@ document.getElementById("Complete-btn-5").addEventListener("click", function () 
 
 document.getElementById("Complete-btn-6").addEventListener("click", function () {
     alert("Board Updated Successfully  !");
-    document.getElementById("Complete-btn-6").style.backgroundColor = "rgba(55, 82, 253, 0.4)";
+    document.getElementById("Complete-btn-6").style.backgroundColor = "rgba(55, 82, 253, 0.2)";
     this.disabled = true;
     let currentTime = new Date().toLocaleTimeString();
     const taskNumbs = document.getElementById("task-numbs").innerText;
@@ -120,3 +120,6 @@ document.getElementById("Complete-btn-6").addEventListener("click", function () 
     document.getElementById("msg-6-time").innerText = currentTime;
     alert("Congrats !!! You have completed all the current task");
 }) 
+
+
+
